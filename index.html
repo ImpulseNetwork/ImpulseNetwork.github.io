@@ -62,6 +62,18 @@
 	<header id="head" class="parallax">
 		<h1>Impulse Network</h1>
 		<h3>smp.impulsenetwork.club</h3>
+		<input type="text" value="smp.impulsenetwork.club" id="myInput">
+<button onclick="myFunction()">Copy ip</button>
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
 	</header>
 	<!-- End Header -->
 
