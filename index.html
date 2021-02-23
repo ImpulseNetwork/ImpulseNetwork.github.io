@@ -62,59 +62,69 @@
 	<header id="head" class="parallax">
 		<h1>Impulse Network</h1>
 		<h3>smp.impulsenetwork.club</h3>
-		<input type="text" value="smp.impulsenetwork.club" id="myInput">
-<button onclick="myFunction()">Copy ip</button>
-
+<p style="text-align: center;"><button id="copyButton">smp.impulsenetwork.club</button></p>
 <script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.tooltip {
-  position: relative;
-  display: inline-block;
+function copyText(text){
+  function selectElementText(element) {
+    if (document.selection) {
+      var range = document.body.createTextRange();
+      range.moveToElementText(element);
+      range.select();
+    } else if (window.getSelection) {
+      var range = document.createRange();
+      range.selectNode(element);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+    }
+  }
+  var element = document.createElement('DIV');
+  element.textContent = text;
+  document.body.appendChild(element);
+  selectElementText(element);
+  document.execCommand('copy');
+  element.remove();
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
+var btn = document.getElementById('copyButton');
+btn.addEventListener('click', function(){
+  copyText("play.mcalagaesia.com");
+  btn.innerHTML = "Copied!";
+})
+
+
+document.getElementById("copyButton").onmouseover = function() {mouseOver()};
+document.getElementById("copyButton").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+    document.getElementById("copyButton").innerHTML = "Copy IP";
 }
 
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-</style>
-</head>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
+function mouseOut() {
+    document.getElementById("copyButton").innerHTML = "smp.impulsenetwork.club";
 }
 </script>
+
+<style>
+#copyButton {
+    border: none;
+    color: white;
+    background-color: #0095ff;
+    padding: 16px 16px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 95%;
+}
+
+#copyButton:hover {
+    background-color: #757575;
+    color: white;
+}
+</style>
 	</header>
 	<!-- End Header -->
 
