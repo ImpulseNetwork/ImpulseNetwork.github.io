@@ -27,12 +27,11 @@
 	<!-- Custom CSS for this template -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
-	new PlayerCounter({
-  element: element,
-  ip: 'smp.impulsenetwork.club',
-  format: '{online}/{max}' // default {online}
-  refreshRate: 60 * 1000 // default 1m
-});
+	<!-- Player count script -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Examples</title>
+    <script src="../dist/mc-player-counter.min.js"></script>
 
 	<!-- Font -->
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -62,7 +61,7 @@
 			  <a href="#staff">Staff</a>
 		  	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 			
-    <p>There are<b><span data-playercounter-ip="play.cubecraft.net" data-playercounter-format="{online}/">0</span></b>players online</p>		
+    <p>There are <b><span data-playercounter-ip="play.cubecraft.net" data-playercounter-format="{online}/">0</span></b> players online</p>		
 <p style="text-align: center;"><button id="copyButton">smp.impulsenetwork.club</button></p>
 <script>
 function copyText(text){
