@@ -1,336 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>Impulse Network</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
-
-	<!-- Custom CSS for this template -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-	<!-- Player count script -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="../dist/mc-player-counter.min.js"></script>
-
-	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-
-	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
-	<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.js">
-
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-	
+    <meta http-equiv="Refresh" content="10;URL=https://discord.wafynetwork.cc/">
+    <meta charset="UTF-8">
+    <title>Impulse Network</title>
+    <meta name="description" content="Our server has been transfered to Wafy Network. Please note the change of address." >
+ 
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+ 
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+ 
+    <style>
+ 
+        body{
+            font-family: 'Noto Sans', Arial, serif;
+            font-weight: 400;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            line-height: 1.618em;
+            background: #464646 url('lake.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+        h2{
+            font-family: 'Noto Sans', Arial, serif;
+            font-weight: 700;
+            font-size:40px;
+            line-height: 1.618em;
+        }
+        section{
+            max-width:800px;
+            margin:8% auto 1em auto;
+            background-color:#222;
+            opacity: 0.8;
+            filter: alpha(opacity=80); /* For IE8 and earlier */
+            color:#fff;
+            padding:1em 5%;
+        }
+ 
+        a{
+            color: #00CC66;
+        }
+        a:focus{
+            outline:none;
+            outline-offset:inherit;
+        }
+        @media (max-device-width: 1027px) {
+ 
+            body{
+                text-align:center;
+                font-size:larger;
+            }
+            section{
+                max-width: 90%;
+            }
+ 
+        }
+ 
+        @media (max-device-width: 640px) {
+            section{
+                max-width: 97%;
+            }
+ 
+        }
+ 
+ 
+    </style>
 </head>
 <body>
-
-	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> 
-	
-	<!-- Navbar -->
-	<div class="topnav" id="myTopnav">
-		<div class="max-width">
-			  <a href="#head">Home</a>
-			  <a href="#about">About</a>
-			  <a href="#vote">Vote</a>
-			  <a href="https://discord.impulsenetwork.club/">Discord</a>
-			  <a href="#staff">Staff</a>
-			  <a href="http://smp.impulsenetwork.club:40023">Dynmap</a>
-		  	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-							
-<p style="text-align: center;"><button id="copyButton">smp.impulsenetwork.club</button></p>
-<script>
-function copyText(text){
-  function selectElementText(element) {
-    if (document.selection) {
-      var range = document.body.createTextRange();
-      range.moveToElementText(element);
-      range.select();
-    } else if (window.getSelection) {
-      var range = document.createRange();
-      range.selectNode(element);
-      window.getSelection().removeAllRanges();
-      window.getSelection().addRange(range);
-    }
-  }
-  var element = document.createElement('DIV');
-  element.textContent = text;
-  document.body.appendChild(element);
-  selectElementText(element);
-  document.execCommand('copy');
-  element.remove();
-}
-
-var btn = document.getElementById('copyButton');
-btn.addEventListener('click', function(){
-  copyText("smp.impulsenetwork.club");
-  btn.innerHTML = "Copied!";
-})
-
-
-document.getElementById("copyButton").onmouseover = function() {mouseOver()};
-document.getElementById("copyButton").onmouseout = function() {mouseOut()};
-
-function mouseOver() {
-    document.getElementById("copyButton").innerHTML = "Copy IP";
-}
-
-function mouseOut() {
-    document.getElementById("copyButton").innerHTML = "smp.impulsenetwork.club";
-}
-</script>
-
-<style>
-#copyButton {
-    border: none;
-    color: black;
-    background-color: ##e5f2f0;
-    padding: 22px 22px;
-    text-align: center;
-    font-size: 17px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 4px;
-    width: 23%;
-}
-
-#copyButton:hover {
-    background-color: #757575;
-    color: white;
-}
-</style>
-		</div>
-	</div>
-	<!-- End Navbar -->
-
-	<!-- Header (Banner) -->
-	<header id="head" class="parallax">
-		<h1>Impulse Network</h1>
-		<h3>smp.impulsenetwork.club</h3>
-<script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
-There are currently <span data-playercounter-ip="smp.impulsenetwork.club">0</span> players online.
-	</header>
-	<!-- End Header -->
-
-	<!-- About Section -->
-	<section id="about">
-		<h1>OUR SERVER</h1>
-		<p>Some of our features.</p>
-		<hr>
-		<!-- First row of features -->
-		<div class="row features">
-			<div class="col">
-				<i class="fas fa-code-branch feature"></i>
-				<h2>Custom Plugins</h2>
-				<p>We've created some custom plugins for our server, they're amazing, you'll like them!</p>
-			</div>
-			<div class="col">
-				<i class="fas fa-users feature"></i>
-				<h2>Great Community</h2>
-				<p>We've got an amazing community, it's always fun on our server!</p>
-			</div>
-			<div class="col">
-				<i class="fas fa-shield-alt feature"></i>
-				<h2>Always online</h2>
-				<p>Our server has a 99.9% Uptime, so you'll be playing whenever you want!</p>
-			</div>
-		</div>
-		<!-- End second row -->
-
-		<!-- Note: You can add as many feature rows as you like. -->
-	</section>
-	<!-- End about section -->
-
-	<!-- Start Second Banner -->
-	<section id="banner2" class="parallax">
-		<h1>LOOKING TO BUY A RANK OR IN-GAME CURRENCY?</h1>
-		<h2>MAKE A TICKET IN OUR <i><a href="https://discord.gg/DsPgsWuC7g">DISCORD</a></i></h2>
-	</section>
-	<!-- End Second Banner -->
-
-	<!-- Vote Section -->
-	<section id="vote">
-		<h1>VOTE FOR OUR SERVER</h1>
-		<p>Vote for some really amazing rewards</p>
-		<hr>
-		<div class="row votelist">
-			<!-- First Vote Link -->
-			<div class="col-md voteblock">
-				<h2>Vote link 1</h2>
-				<a href="https://mc-lists.org/server-impulse-smp.1505/vote">Vote now</a>
-			</div>
-			<!-- End First Vote Link -->
-
-			<!-- Second Vote Link -->
-			<div class="col-md voteblock">
-				<h2>Vote link 2</h2>
-				<a href="https://minecraftservers.org/vote/605325">Vote now</a>
-			</div>
-			<!-- End Second Vote Link -->
-
-			<!-- Third Vote Link -->
-			<div class="col-md voteblock">
-				<h2>Vote link 3</h2>
-				<a href="https://minestatus.net/server/smp.impulsenetwork.club">Vote now</a>
-			</div>
-			<!-- End Third Vote Link -->
-		</div>
-
-		<!-- Note -->
-		<p>Please note that sometimes rewards can take up to 10 minutes to receive, if you don't receive any rewards, please contact a staff member.</p>
-	</section>
-	<!-- End Vote Section -->
-
-	<!-- Third Banner -->
-	<section id="banner3" class="parallax">
-		<h1>HAVE A QUESTION?</h1>
-		<h2>MAKE A TICKET IN OUR <i><a href="https://discord.gg/DsPgsWuC7g">DISCORD</a></i></h2>
-	</section>
-	<!-- End Third Section -->
-
-	<!-- Staff Section -->
-	<section id="staff">
-		<h1>OUR STAFF</h1>
-		<p>The staff members of our server</p>
-		<hr>
-		<!-- First Row Staff -->
-		<div class="row stafflist">
-			<!-- First Staff Member -->
-			<div class="col-md staffblock">
-				<img width="100px;" src="https://cravatar.eu/helmhead/Slxxp/190.png">
-				<h2>Slxxp</h2>
-				<p>Owner</p>
-			</div>
-			<!-- End First Staff Member -->
-
-			<!-- Second Staff Member -->
-			<div class="col-md staffblock">
-				<img width="100px;" src="https://cravatar.eu/helmhead/Ganz1kazee/190.png">
-				<h2>Ganz1kazee</h2>
-				<p>Owner</p>
-			</div>
-			<!-- End Second Staf Member -->
-
-			<!-- Third Staff Member -->
-			<div class="col-md staffblock">
-				<img width="100px;" src="https://cravatar.eu/helmhead/vertalen/190.png">
-				<h2>Vertalen</h2>
-				<p>Moderator</p>
-			</div>
-			<!-- End Third Staff Member -->
-		</div>
-		<!-- End First Row Staff -->
-
-		<!-- Second Row Staff Member -->
-		<div class="row stafflist">
-			<!-- Fourth Staff Member -->
-			<div class="col-md staffblock">
-				<img width="100px;" src="https://cravatar.eu/helmhead/iAmStaff/190.png">
-				<h2>iAmStaff</h2>
-				<p>Helper</p>
-			</div>
-			<!-- End Fourth Staff Member -->
-
-			<!-- Fifth Staff Member -->	
-			<div class="col-md staffblock">
-				<img width="100px;" src="https://cravatar.eu/helmhead/BLOODRUST/190.png">
-				<h2>???</h2>
-				<p>?</p>
-			</div>
-			<!-- End Fifth Staff Member -->
-
-			<!-- Sixth Staff Member -->
-			<div class="col-md staffblock">
-				<img width="100px;" src="https://cravatar.eu/helmhead/BLOODRUST/190.png">
-				<h2>???</h2>
-				<p>?</p>
-			</div>
-			<!-- End Sixth Staf Member -->
-		</div>
-		<!-- End Second Row Staff -->
-	</section>
-	<!-- End Staff Section -->
-
-	<!-- Footer -->
-	<footer>
-		<div class="footer">
-			<div class="copyright-notice">
-				<!-- !! Replace this with your own domain !! -->
-				<p>www.impulsenetwork.club &copy; | All rights reserved</p>
-				<!-- If you want to, you're allowed to delete these credits. But if you want to support my work, please leave it. -->
-				<p>Made with <font color="red">❤</font> by <a target="_blank" href="https://discord.gg/DsPgsWuC7g">Slxxp</a>.</font></p>
-      <a href="https://discord.impulsenetwork.club/">
-        <img width="69" src="http://vxf.nl/wp-content/uploads/2021/02/e05ead6e6ebc08df9291738d0aa6986d.png" alt="Discord Logo">
-      </a>
-		</div>
-	</footer>
-	<!-- End Footer -->
-
-	<!-- Smooth Scrolling Script (from https://goo.gl/uWLqWu) | Do not touch if you don't know what you're doing! -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-		  // Add smooth scrolling to all links
-		  $("a").on('click', function(event) {
-
-		    // Make sure this.hash has a value before overriding default behavior
-		    if (this.hash !== "") {
-		      // Prevent default anchor click behavior
-		      event.preventDefault();
-
-		      // Store hash
-		      var hash = this.hash;
-
-		      // Using jQuery's animate() method to add smooth page scroll
-		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-		      $('html, body').animate({
-		        scrollTop: $(hash).offset().top
-		      }, 100, function(){
-		   
-		        // Add hash (#) to URL when done scrolling (default click behavior)
-		        window.location.hash = hash;
-		      });
-		    } // End if
-		  });
-		});
-	</script>
-	<!-- End Smooth Scrolling Script -->
-
-	<script>
-		function myFunction() {
-		    var x = document.getElementById("myTopnav");
-		    if (x.className === "topnav") {
-		        x.className += " responsive";
-		    } else {
-		        x.className = "topnav";
-		    }
-		}
-	</script>
-
-	<script>
-	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
-
-	function scrollFunction() {
-	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-	        document.getElementById("myBtn").style.display = "block";
-	    } else {
-	        document.getElementById("myBtn").style.display = "none";
-	    }
-	}
-
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-	    document.body.scrollTop = 0;
-	    document.documentElement.scrollTop = 0;
-	}
-	</script>
-
+ 
+<section>
+    <h2>Our server has been transfered to Wafy Network!</h2>
+ 
+    <h3>Check their <a href="Discord">https://discord.wafynetwork.cc/</a> for more information.</h3>
+    <h3>You will be transferred to their discord in a moment.</h3>
+ 
+    <p>If you have waited more than a few seconds and you are still seeing this message, please click on 'Discord' above! Thank you.</p>
+</section>
+ 
 </body>
 </html>
